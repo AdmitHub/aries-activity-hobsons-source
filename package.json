@@ -1,0 +1,29 @@
+{
+  "name": "aries-activity-hobsons-source",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "babel-node test/test.js | faucet",
+    "tail": "tail -f app.log | bunyan -o short"
+  },
+  "author": "aloisbarreras",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.5.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "blue-tape": "^0.2.0",
+    "faucet": "0.0.1",
+    "nock": "^7.0.2"
+  },
+  "dependencies": {
+    "astronomer-aries": "astronomerio/aries",
+    "lodash.omit": "^4.0.2",
+    "mongodb-uri": "^0.9.7",
+    "mongoose": "4.4.1"
+  }
+}
