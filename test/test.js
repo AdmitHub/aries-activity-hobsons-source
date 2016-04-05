@@ -1,6 +1,6 @@
 import test from 'blue-tape';
 import HobsonsSource from '../lib/index.js';
-
+import config from './test-config.js';
 
 
 // test('Creates Client', async t => {
@@ -38,6 +38,7 @@ test('Gets All Contacts', async t => {
     try {
         await source.createClient(config.url);
         const allContacts = await source.getAllContacts(config);
+        t.comment(allContacts.length);
     } catch(err) {
         t.comment(err);
     }
