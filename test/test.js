@@ -2,7 +2,6 @@ import test from 'blue-tape';
 import HobsonsSource from '../lib/index.js';
 import config from './test-config.js';
 
-
 // test('Creates Client', async t => {
 //     const source = new HobsonsSource();
 //     try {
@@ -33,12 +32,23 @@ import config from './test-config.js';
 //     }
 // });
 
-test('Gets All Contacts', async t => {
+// test('Gets All Contacts', async t => {
+//     const source = new HobsonsSource();
+//     try {
+//         await source.createClient(config.url);
+//         const allContacts = await source.onTask(null, config);
+//         t.comment(allContacts.length);
+//     } catch(err) {
+//         t.comment(err);
+//     }
+// });
+
+test('Gets All Filters', async t => {
     const source = new HobsonsSource();
     try {
         await source.createClient(config.url);
-        const allContacts = await source.getAllContacts(config);
-        t.comment(allContacts.length);
+        const allFilters = await source.getAllFilters(config);
+        t.comment(allFilters);
     } catch(err) {
         t.comment(err);
     }
