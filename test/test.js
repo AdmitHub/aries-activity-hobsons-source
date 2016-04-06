@@ -43,12 +43,23 @@ import config from './test-config.js';
 //     }
 // });
 
-test('Gets All Filters', async t => {
+// test('Gets All Filters', async t => {
+//     const source = new HobsonsSource();
+//     try {
+//         await source.createClient(config.url);
+//         const allFilters = await source.getAllFilters(config);
+//         t.comment(allFilters);
+//     } catch(err) {
+//         t.comment(err);
+//     }
+// });
+
+test('Gets Filter Contacts', async t => {
     const source = new HobsonsSource();
     try {
         await source.createClient(config.url);
-        const allFilters = await source.getAllFilters(config);
-        t.comment(allFilters);
+        const contacts = await source.getFilterContactsByFilterId(config);
+        t.comment(JSON.stringify(contacts));
     } catch(err) {
         t.comment(err);
     }
