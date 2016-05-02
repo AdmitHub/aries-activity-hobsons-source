@@ -6,8 +6,6 @@ Transform a query from the Hobsons Connect API into a newline delimited JSON fil
 
 You can specify any of the following parameters in your Aries dashboard.
 
----
-
 ### url
 
 This is the url to your wsdl file. It will look like: 
@@ -22,6 +20,7 @@ Your Hobsons account name, such as 'astronomer'
 
 Your API web service passkey. You can find this in your Hobsons Connect dashboard.
 
-### filterId *optional*
+### filterId 
+*optional*
 
 The id for the filter from which you ar querying.
