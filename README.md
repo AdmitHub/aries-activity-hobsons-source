@@ -36,3 +36,7 @@ Example:
 { mappingName: 'Date of Birth', name: '' },
 { mappingName: 'E-mail', name: '' },
 ```
+
+## License
+
+MIT
