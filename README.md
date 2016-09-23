@@ -44,6 +44,7 @@ Your Hobsons account name, such as 'astronomer'
 Your API web service passkey. You can find this in your Hobsons Connect dashboard.
 ```javascript
 "passKey": "J7EN4JaQPGLVuxQYvuvwMVq0HsW6DMPBno6TpMrgosl="
+```
 
 ### Filter ID *optional*
 The id for the filter from which you are querying. Specify this parameter when using the getFilterContactsByFilterId method.
@@ -60,7 +61,7 @@ The array of contact attributes you would like to be retrieved from the API. The
 ```
 
 ##Response
-This is an example response with the default method `
+This is an example response with the default method `getFilterContactsByFilterId`.
 ```javascript
 [
   {
